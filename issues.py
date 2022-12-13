@@ -9,8 +9,8 @@ this_repo = os.environ("secret.REPO")
 
 def main():
     token = Github(github_secret) # FIXME
-    source_repo = token.get_repo('bzz-fgict/SOURCE') # FIXME
-    target_repo = token.get_repo(graphics80/IssueCopy) # FIXME
+    source_repo = token.get_repo('graphics80/IssueCopy') # FIXME
+    target_repo = token.get_repo(this_repo) # FIXME
     source_issues = source_repo.get_issues(state='open', sort='created', direction='asc')
     target_issues = target_repo.get_issues(state='open', sort='created', direction='asc')
     for issue in source_issues:
