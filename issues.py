@@ -6,6 +6,8 @@ from github import Github
 github_secret = os.environ['GHSECRET']
 this_repo = os.environ['REPO']
 
+print(this_repo)
+
 
 def main():
 
