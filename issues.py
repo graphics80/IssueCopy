@@ -3,11 +3,13 @@ import os
 
 from github import Github
 
-github_secret = os.environ("GHSECRET")
-this_repo = os.environ("REPO")
+print(os.environ)
+github_secret = os.environ('GHSECRET')
+this_repo = os.environ('REPO')
 
 
 def main():
+
     token = Github(github_secret) # FIXME
     source_repo = token.get_repo('graphics80/IssueCopy') # FIXME
     target_repo = token.get_repo(this_repo) # FIXME
