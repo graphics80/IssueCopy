@@ -3,8 +3,8 @@ import os
 
 from github import Github
 
-github_secret = os.environ("secret.GHSECRET")
-this_repo = os.environ("secret.REPO")
+github_secret = os.environ("GHSECRET")
+this_repo = os.environ("REPO")
 
 
 def main():
